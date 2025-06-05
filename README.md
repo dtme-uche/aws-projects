@@ -13,9 +13,8 @@ Each project lives in its own folder with:
 
 | Project | Description |
 |--------|-------------|
-| [Project 01: Launch EC2 Instance](./project-01-launch-ec2) | Create and configure an EC2 instance using the AWS console |
-| [Project 02: Deploy Website with Apache](./project-02-deploy-apache) | Launch Apache web server on EC2 and host a sample webpage |
-| Project 03 | _Coming soon..._ |
+| [Project 01: Deploy Website with Apache](./project-01-deploy-apache) | Launch Apache web server on EC2 and host a sample webpage |
+| Project 02 | _Coming soon..._ |
 | ... | ... |
 
 ## 🧠 Skills Demonstrated
@@ -34,7 +33,6 @@ New projects will be added weekly or bi-weekly. Follow along or fork this repo t
 
 ## 🙌 Let's Connect
 
-- 📫 [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE/)
-- 🌐 [Portfolio](https://yourwebsite.com) *(if available)*
+- 📫 [My LinkedIn Profile](https://www.linkedin.com/in/uche-francis-6803b080/)
 
 
