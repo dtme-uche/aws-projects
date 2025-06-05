@@ -9,7 +9,7 @@ In this project, I launch an EC2 instance, install Apache HTTP Server, and host 
 - Security Groups
 
 ## Website Preview
-*(Add a screenshot of your deployed website here)*
+![Website Screenshot](./screenshots/website_preview.png)
 
 ## Steps to Reproduce
 
