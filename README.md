@@ -14,7 +14,8 @@ Each project lives in its own folder with:
 | Project | Description |
 |--------|-------------|
 | [Project 01: Deploy Website with Apache](./project-01-deploy-apache) | Launch Apache web server on EC2 and host a sample webpage |
-| Project 02 | _Coming soon..._ |
+| [Project 02: Connect EC2 to RDS Databse](./project-02-ec2-rds-mysql) | Connect EC2 Website to RDS MySQL Database to read a .php file |
+| Project 03 | _Coming soon..._ |
 | ... | ... |
 
 ## 🧠 Skills Demonstrated
