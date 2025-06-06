@@ -1,4 +1,4 @@
-# Project 03: Connect EC2 Website to RDS MySQL Database
+# Project 02: Connect EC2 Website to RDS MySQL Database
 
 ## ✨ Overview
 
