@@ -7,16 +7,14 @@ This project allows users to upload image files through a web form on an EC2-hos
 ## 📁 Folder Structure
 
 project-04-photo-gallery/
-│
-├── upload.html # Form to upload image
-├── upload.php # Handles upload to S3 + inserts record to RDS
-├── index.php # Displays gallery images dynamically from RDS
-├── db-config.php # Database connection credentials
-├── setup.sh # Installs Apache, PHP, Composer, AWS SDK
-├── composer.json # PHP dependencies
-├── vendor/ # Installed AWS SDK libraries
-├── .gitignore # To ignore vendor and sensitive files
-└── screenshots/ # Project screenshots (optional)
+- `upload.html`: Form to upload image
+- `upload.php` : Handles upload to S3 + inserts record to RDS
+- `index.php` : Displays gallery images dynamically from RDS
+- `db-config.php` : Database connection credentials sample (Never push credentials)
+- `setup.sh` : Installs Apache, PHP, Composer, AWS SDK
+- `composer.json` : PHP dependencies created by Composer (Not pushed to Github)
+- `vendor/` : Installed AWS SDK libraries (Not pushed to Github)
+- `screenshots/` : Project screenshots (optional)
 
 
 ---
