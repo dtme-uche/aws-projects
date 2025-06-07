@@ -22,9 +22,16 @@ Each project lives in its own folder with:
 ## 🧠 Skills Demonstrated
 
 - EC2 instance setup
-- Apache web server deployment
-- Security groups and IP whitelisting
-- Bash scripting for automation
+- EC2 instance provisioning and SSH access
+- Apache web server deployment and configuration
+- PHP setup and dynamic content rendering
+- Security group management and IP whitelisting
+- IAM roles for secure service-to-service communication
+- Launching and connecting to RDS MySQL databases
+- Uploading files to S3 from EC2 using PHP and AWS SDK
+- Composer for PHP dependency management
+- Bash scripting for EC2 setup automation
+- Troubleshooting real-world errors (e.g., PHP config, IAM, SDK versions)
 - GitHub documentation and portfolio building
 
 ## 📅 Update Schedule
