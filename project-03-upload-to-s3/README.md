@@ -44,11 +44,11 @@ The script also installed the AWS SDK for PHP via Composer.
 
 ### 3. Project File Structure  
 I created the following files in `/var/www/html/`:
-- `upload.html`: a simple form to select and upload images  
-- `upload.php`: handles the upload and sends the image to S3  
-- `test-autoload.php`: used to confirm that Composer's autoloader and the AWS SDK were correctly configured  
-- `composer.json`: defines the AWS SDK dependency  
-- `vendor/`: created by Composer and contains the AWS SDK and its dependencies  
+- `upload.html`: a simple form to select and upload images
+- `setup.sh`: includes automation files to install dependencies and Composer 
+- `upload.php`: handles the upload and sends the image to S3   
+- `composer.json`: created by setup.sh and defines the AWS SDK dependency  
+- `vendor/`: created by setup.sh by Composer and contains the AWS SDK and its dependencies  
 - `.gitignore`: excludes `vendor/` and `composer.lock` from version control  
 
 ---
@@ -69,4 +69,47 @@ The default AWS SDK version from `composer install` was outdated and incompatibl
 I upgraded to a newer version using:  
 ```bash
 sudo composer require aws/aws-sdk-php:^3.269.0 -W
+```
+### 2. File Upload Error: UPLOAD_ERR_INI_SIZE (1)
+What happened:
+PHP was silently rejecting image files larger than 2MB.
+
+Fix:
+I checked current limits with:
+
+```
+echo 'upload_max_filesize = ' . ini_get('upload_max_filesize');
+echo 'post_max_size = ' . ini_get('post_max_size');
+```
+Then I edited the php.ini file:
+
+```
+upload_max_filesize = 10M
+post_max_size = 20M
+```
+Restarted Apache to apply changes:
+
+```
+sudo systemctl restart apache2
+```
+
+### 3. S3 Upload Error: The bucket does not allow ACLs
+What happened:
+My upload.php was setting 'ACL' => 'public-read', but my bucket had ACLs disabled (a recent default in AWS).
+
+Fix:
+
+* I removed the 'ACL' => 'public-read' parameter from the putObject() call in upload.php.
+
+* I did not modify the bucket policy. Uploaded files remain private by default.
+
+### 4. IAM Role Debugging
+What happened:
+Initially, uploads failed silently because the EC2 instance didn’t have permissions to access S3.
+
+Fix:
+I confirmed that the instance had an IAM role attached with the AmazonS3FullAccess policy, which resolved the issue.
+
+## ✅ Final Result
+Once all issues were fixed, I successfully uploaded images from my EC2-hosted form to my private S3 bucket. The flow is seamless, and no AWS credentials are exposed in the code thanks to IAM role-based access.
 
