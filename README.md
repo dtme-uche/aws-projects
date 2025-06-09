@@ -6,7 +6,7 @@ This repository documents my hands-on learning journey through Amazon Web Servic
 
 Each project lives in its own folder with:
 - A detailed `README.md` for that project
-- Sample code/scripts (like `.sh`, `.html`, etc.)
+- Sample code/scripts (like `.sh`, `.html`, `.php` etc.)
 - Screenshots when relevant
 
 ## 🚀 Projects
