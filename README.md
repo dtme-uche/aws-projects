@@ -1,6 +1,6 @@
 # AWS Projects Portfolio
 
-This repository documents my hands-on learning journey through Amazon Web Services (AWS). Each project builds on the previous one — starting from basic EC2 deployments to more advanced AWS solutions — showcasing my growth toward becoming a skilled Cloud/DevOps engineer.
+This repository documents my hands-on learning journey through Amazon Web Services (AWS). Each project builds on the previous one, starting from basic EC2 deployments to more advanced AWS solutions — showcasing my growth toward becoming a skilled Cloud/DevOps engineer.
 
 ## 🔧 Project Structure
 
