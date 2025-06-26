@@ -71,7 +71,7 @@ sudo cp wp-config-sample.php wp-config.php
 sudo vi wp-config.php
 ```
 
-## Updated:
+### Updated:
 ```bash
 define('DB_NAME', 'wordpress');
 define('DB_USER', 'wp_user');
@@ -89,7 +89,7 @@ sudo rm /var/www/html/index.html
 sudo systemctl restart apache2
 ```
 
-# VISIT http://<EC2-Public-IP>
+#### VISIT http://EC2-Public-IP
 
 
 
