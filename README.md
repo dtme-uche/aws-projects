@@ -18,7 +18,8 @@ Each project lives in its own folder with:
 | [Project 03: Upload to S3 using PHP](./project-03-upload-to-s3) | Upload Images to S3 from EC2 using HTML forms and PHP |
 | [Project 04: Build a Dynamic Photo Gallery](./project-04-photo-gallery-s3-rds) | Build a Dynamic Photo Gallery with EC2 + S3 + RDS |
 | [Project 05: Install WordPress on EC2 Instance](./project-05-wordpress-on-ec2) | Install WordPress Website on an EC2 Instance |
-| Project 06 | _Coming soon..._ |
+| [Project 06: Upload Files from EC2 to S3 using AWS CLI](./project-06-upload-to-s3-cli) | Upload to S3 from EC2 |
+| Project 07 | _Coming soon..._ |
 | ... | ... |
 
 ## 🧠 Skills Demonstrated
