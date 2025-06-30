@@ -44,7 +44,7 @@ But got this error:
 Package 'awscli' is not available
 ```
 
-### ✅ Solution: Manually AWS CLI v2 Installation
+### ✅ Solution: Manual AWS CLI v2 Installation
 
 ```bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
